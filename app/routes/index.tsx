@@ -1,12 +1,11 @@
 import { Link } from "@remix-run/react";
+import Input from "~/components/form-elements/Input";
 
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Welcome to Remix</h1>
-
-
-
+      <Input />
       <ul>
         <li>
           <Link to="/page-two">Page Two</Link>

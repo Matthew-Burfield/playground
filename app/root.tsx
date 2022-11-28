@@ -1,5 +1,5 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node";
-import styles from "./styles/app.css";
+import styles from "~/styles/tailwind.css";
 import {
   Links,
   LiveReload,
