@@ -1,7 +1,8 @@
 export default function Input() {
   return (
-    <div className="relative flex border border-solid border-neutral-700 rounded-sm">
-      <input className="bg-transparent border-none outline-none h-20 px-2.5" />
+    <div className="relative flex justify-start align-items border border-solid border-slate-400 rounded-sm">
+      <label>Label</label>
+      <input className="bg-transparent border-none outline-none h-8 px-2.5" />
     </div>
   );
 }

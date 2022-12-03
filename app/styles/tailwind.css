@@ -525,8 +525,12 @@ video {
   display: contents;
 }
 
-.h-20 {
-  height: 5rem;
+.h-8 {
+  height: 2rem;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .rounded-sm {
@@ -545,9 +549,9 @@ video {
   border-style: none;
 }
 
-.border-neutral-700 {
+.border-slate-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(64 64 64 / var(--tw-border-opacity));
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
 .bg-transparent {
