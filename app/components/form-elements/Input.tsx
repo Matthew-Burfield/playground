@@ -15,7 +15,8 @@ export default function Input(props: Props) {
         <span
           className="pointer-events-none flex h-full origin-top-left 
           -translate-y-1 scale-[.65] items-center text-steel-100
-          duration-200 peer-focus:text-mountain-100
+          duration-200 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100
+          peer-focus:text-mountain-100 peer-placeholder-shown:peer-focus:-translate-y-1 peer-placeholder-shown:peer-focus:scale-[.65]
           "
         >
           {props.labelText}
