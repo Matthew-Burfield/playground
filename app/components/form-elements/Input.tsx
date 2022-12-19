@@ -1,16 +1,17 @@
-type Props = {
+interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   labelText: string;
-};
+}
 
-export default function Input(props: Props) {
+export default function Input({ labelText, ...props }: Props) {
   return (
     <div className="align-items relative flex h-11 justify-start">
-      <label className="h-full w-full px-2.5">
+      <label className="h-full w-full border border-solid border-transparent px-2.5">
         <input
           className="peer absolute inset-0 rounded-sm border border-solid
           border-steel-40 bg-transparent px-2.5 pt-2 leading-4
           outline-none focus:border-mountain-100"
           placeholder=" "
+          {...props}
         />
         <span
           className="pointer-events-none flex h-full origin-top-left 
@@ -19,7 +20,8 @@ export default function Input(props: Props) {
           peer-focus:text-mountain-100 peer-placeholder-shown:peer-focus:-translate-y-1 peer-placeholder-shown:peer-focus:scale-[.65]
           "
         >
-          {props.labelText}
+          {labelText}
+          {props.required ? "*" : ""}
         </span>
       </label>
     </div>
